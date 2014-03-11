@@ -26,6 +26,7 @@ function init() {
     minResolution: mapMaxResolution,
     numZoomLevels: mapMaxZoom+1
   };
+
   map = new OpenLayers.Map('map', options);
   layer = new OpenLayers.Layer.XYZ( "MapTiler layer", "1111/${z}/${x}/${y}.png", {
     transitionEffect: 'resize',
